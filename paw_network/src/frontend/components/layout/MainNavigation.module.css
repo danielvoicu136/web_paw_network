@@ -1,7 +1,7 @@
 /* Header styling */
 .header {
     background-color: #2B2D42;
-    padding: 10px 20px;
+    padding: 0.7em 1.2em;
 }
 
 /* Navbar styling */
@@ -9,8 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
-  
+    margin: 1.2em;
 }
 
 .navbarLeft,
@@ -23,7 +22,7 @@
 .navbarRight a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 0.5em;
     position: relative;
 }
 
@@ -31,19 +30,28 @@
     background-color: #EF233C;
     font-weight: bold;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 0.7em 1em;
+    border-radius: 0.3em;
 }
 
 .searchIcon {
-    font-size: 20px;
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+    border: 0.1em solid white; 
+    border-radius: 0.5em;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 1.4em;
     font-weight: bold;
-    margin-right: 20px;
-    color: #EF233C;
+    margin-right: 0.1em;
+}
+
+.logoIcon {
+    color: white;
+    background-color: #EF233C;
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
 }
 
 /* Dropdown container */
@@ -55,7 +63,7 @@
 /* Dropdown button */
 .dropbtn {
     color: white;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
     cursor: pointer;
 }
@@ -65,11 +73,11 @@
     display: none; /* Ensure it's hidden by default */
     position: absolute;
     background-color: #43457B;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 12em;
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
-    top: 100%; /* Aligns below the dropdown button */
+    top: 160%; /* Aligns below the dropdown button */
     left: 0;
 }
 
