@@ -1,3 +1,14 @@
 /* * { 
     background-color: grey;
+
+    main dark : #18172A
+
+    dark lines : #1B1A30
+
 } */
+
+.App {
+    background-image: url('../src/frontend/assets/images/background_pattern.svg');
+    background-size: auto; /* or use specific size like background-size: 100px 100px; */
+    background-repeat: repeat; /* This will repeat the background */
+}
