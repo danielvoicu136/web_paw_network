@@ -39,10 +39,13 @@ function HeroSlider() {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
+    speed: 500, // Adjust speed to be more noticeable
+    slidesToShow: 2, // Try with 1 slide first
+    slidesToScroll: 1,
+    autoplay: true, // Add autoplay to test automatic movement
+    autoplaySpeed: 2000, // Adjust autoplay speed for testing
   };
+  
 
   return (
     <div>
