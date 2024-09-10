@@ -1,6 +1,6 @@
 function MainFooter() { 
     return(
-        <p></p>
+        <p>hello</p>
     )
 }
 

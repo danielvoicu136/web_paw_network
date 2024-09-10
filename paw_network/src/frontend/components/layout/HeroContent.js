@@ -5,6 +5,9 @@ import classes from './HeroContent.module.css';
 
 
 function HeroContent() { 
+
+    const productImage = require('../../assets/images/product.jpg');
+
     return(  
         <div className={classes['ads-container']}>
             <div className={classes['small-box-1']}><p>
@@ -19,11 +22,8 @@ function HeroContent() {
             </p>
             </div>
             <div className={classes['big-box']}>
-            <p>
-                Over 70.000 products and services. 
-                Available on IOS and Android. 
-                Rated 4.8 / 5 Stars   
-                <img src='../../../../assets/images/product.jpg' alt='img not found'></img>
+            <p className={classes['central-content']}>
+                <img src={productImage} width="350px" height="350px" alt="product" />
             </p>
          
             </div>

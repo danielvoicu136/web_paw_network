@@ -10,7 +10,7 @@ function MainNavigation() {
                     <a href="#" className={classes.logo}><span className={classes.logoIcon}><i className="fa-solid fa-paw"></i></span> PAW</a>
                     <a href="#" className={classes.dropbtn}><i class="fa-solid fa-comment-medical"></i> Live Chat</a>
                     <div className={classes.dropdown}>
-                        <a href="#" className={classes.dropbtn}><i className="fas fa-home"></i> Explore</a>
+                        <a href="#" className={classes.dropbtn}><i className="fas fa-home"></i> Explore Routes</a>
                         <div className={classes.dropdownContent}>
                             <Link to='/'>Index</Link>
                             <Link to='/home'>Home</Link>

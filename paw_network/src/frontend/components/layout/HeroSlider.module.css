@@ -1,0 +1,32 @@
+.selectionBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .categoryButton {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-transform: uppercase;
+  }
+  
+  .activeButton {
+    color: red;
+    border-bottom: 2px solid white;
+  }
+  
+  .sliderItem {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sliderItem h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
