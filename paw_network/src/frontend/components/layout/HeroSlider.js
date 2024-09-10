@@ -12,20 +12,20 @@ const categoryServices = [
 
 const pawServices = {
   DogServices: [
-    { id: 1, title: 'Dog Walking', description: 'We walk your dog' },
-    { id: 2, title: 'Dog Washing', description: 'We wash your dog' }
+    { id: 1, title: 'Walking', description: 'We walk your dog' },
+    { id: 2, title: 'Washing', description: 'We wash your dog' }
   ],
   CatServices: [
-    { id: 3, title: 'Cat HairCut', description: 'We change your cat look' },
-    { id: 4, title: 'Cat CleanUp', description: 'We change your cat sand' }
+    { id: 3, title: 'Hair Cut', description: 'We change your cat look' },
+    { id: 4, title: 'Clean Up', description: 'We change your cat sand' }
   ],
   MedicalServices: [
     { id: 5, title: 'Medical Urgence', description: 'We instantly call a doctor' },
-    { id: 6, title: 'Regular Check', description: 'We provide regular health checkups' }
+    { id: 6, title: 'Health Check', description: 'We provide health checkups' }
   ],
   ShopServices: [
-    { id: 7, title: 'Dog Food', description: 'We provide dog food' },
-    { id: 8, title: 'Accessories', description: 'We provide accessories and utility items' }
+    { id: 7, title: 'Foods', description: 'We provide dog food' },
+    { id: 8, title: 'Accessories', description: 'We provide accessories and utility' }
   ],
   OtherServices: [
     { id: 9, title: 'Requests', description: 'We accept custom requests' },
@@ -39,17 +39,17 @@ function HeroSlider() {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500, // Adjust speed to be more noticeable
-    slidesToShow: 2, // Try with 1 slide first
+    speed: 500, 
+    slidesToShow: 2, 
     slidesToScroll: 1,
-    autoplay: true, // Add autoplay to test automatic movement
-    autoplaySpeed: 2000, // Adjust autoplay speed for testing
+    autoplay: true, 
+    autoplaySpeed: 2000, 
   };
   
 
   return (
     <div>
-      {/* Selection Bar */}
+     
       <div className={classes.selectionBar}>
         {categoryServices.map((category) => (
           <button
@@ -64,7 +64,6 @@ function HeroSlider() {
         ))}
       </div>
 
-      {/* Slider */}
       <Slider {...sliderSettings}>
         {pawServices[selectedCategory] &&
           pawServices[selectedCategory].map((service) => (

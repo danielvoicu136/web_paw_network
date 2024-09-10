@@ -10,7 +10,6 @@ function HomePage () {
                 <MainNavigation/>
                 <HeroContent/>
                 <HeroSlider/>
-                
         </div>
 
 }
