@@ -1,15 +1,20 @@
-/* Header styling */
+
 .header {
     background-color: #2B2D42;
     padding: 0.7em 1.2em;
 }
 
-/* Navbar styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    white-space: nowrap;
     align-items: center;
     margin: 1.2em;
+  
+
+   
 }
 
 .navbarLeft,
@@ -54,13 +59,13 @@
     border-radius: 0.3em;
 }
 
-/* Dropdown container */
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown button */
+
 .dropbtn {
     color: white;
     padding: 1em 1em;
@@ -68,20 +73,19 @@
     cursor: pointer;
 }
 
-/* Dropdown content (hidden by default) */
+
 .dropdownContent {
-    display: none; /* Ensure it's hidden by default */
+    display: none; 
     position: absolute;
     background-color: #43457B;
     min-width: 12em;
     box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
-    top: 130%; /* Aligns below the dropdown button */
+    top: 130%; 
     left: 0;
 }
 
-/* Links inside the dropdown */
 .dropdownContent a {
     color: white;
     padding: 12px 16px;
@@ -89,17 +93,16 @@
     display: block;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdownContent a:hover {
     background-color: #575A89;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdownContent {
-    display: block; /* Display the dropdown on hover */
+    display: block; 
 }
 
-/* Change the color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #3A3C69;
     border-radius: 5px;
