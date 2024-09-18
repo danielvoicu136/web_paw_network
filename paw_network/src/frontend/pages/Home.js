@@ -13,7 +13,6 @@ function HomePage () {
                 <HeroSlider/>
                 <MainFooter />
         </div>
-
 }
 
 export default HomePage;
