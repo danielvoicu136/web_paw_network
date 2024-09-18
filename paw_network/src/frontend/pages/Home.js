@@ -1,8 +1,8 @@
-import HeroContent from "../components/layout/HeroContent";
-import HeroSlider from "../components/layout/HeroSlider";
-import MainAds from "../components/layout/MainAds";
-import MainFooter from "../components/layout/MainFooter";
-import MainNavigation from "../components/layout/MainNavigation";
+import HeroContent from "../components/layout/HeroContent.js";
+import HeroSlider from "../components/layout/HeroSlider.js";
+import MainAds from "../components/layout/MainAds.js";
+import MainFooter from "../components/layout/MainFooter.js";
+import MainNavigation from "../components/layout/MainNavigation.js";
 
 function HomePage () { 
 
@@ -10,7 +10,7 @@ function HomePage () {
                 <MainAds/>
                 <MainNavigation/>
                 <HeroContent/>
-                <HeroSlider/>
+               {/*  <HeroSlider/> */}
                 <MainFooter />
         </div>
 }

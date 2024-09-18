@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import classes from './HeroSlider.module.css'; // Importing CSS Module
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import classes from './HeroSlider.module.css';
 
 const categoryServices = [
   { id: 1, name: 'Dogs', key: 'DogServices' },
@@ -30,26 +32,29 @@ const pawServices = {
   OtherServices: [
     { id: 9, title: 'Requests', description: 'We accept custom requests' },
     { id: 10, title: 'Finder GPS', description: 'We provide real-time pet tracking' }
-  ],
+  ]
 };
 
 function HeroSlider() {
   const [selectedCategory, setSelectedCategory] = useState('DogServices');
 
+  // Settings for react-slick Slider
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500, 
-    slidesToShow: 2, 
+    speed: 500,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true, 
-    autoplaySpeed: 2000, 
+    autoplay: true,
+    autoplaySpeed: 2000
   };
-  
+
+  // Check if Slider is properly imported and functional
+  console.log(Slider);
 
   return (
     <div>
-     
+      {/* Category Selection */}
       <div className={classes.selectionBar}>
         {categoryServices.map((category) => (
           <button
@@ -64,6 +69,7 @@ function HeroSlider() {
         ))}
       </div>
 
+      {/* Slider Component */}
       <Slider {...sliderSettings}>
         {pawServices[selectedCategory] &&
           pawServices[selectedCategory].map((service) => (
