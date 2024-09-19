@@ -23,12 +23,22 @@ Coming soon
 
 ## How to Run
 
-- **Frontend (Client):**
+- **Frontend (Client)**
 
-  ````bash
+  ```bash
   cd client && npm start
 
-  - **Backend (Server):**
+  ```
+
+- **Backend (Server)**
+
   ```bash
   cd server && npm start
-  ````
+
+  ```
+
+- **Concurrent (Client , Server)**
+
+  ```bash
+  npm start dev
+  ```
