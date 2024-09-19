@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 import { connectDB } from './db/connectDB.js';
 
 dotenv.config();
-console.log('Loaded environment variables:', process.env);
+
 const app = express();
 
 app.get("/", (req, res) => { 
