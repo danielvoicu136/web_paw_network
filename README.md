@@ -6,6 +6,11 @@ Web-based animal-focused social e-commerce platform.
 
 Coming soon
 
+## Continuous Deployment
+
+- Google Cloud
+- Coming soon
+
 ---
 
 ## Frontend (Client)
