@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Hello, World! Your MERN app is deployed.');
+  });
+
 app.use("/api/auth", authRoutes);
 
 

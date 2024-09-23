@@ -1,23 +1,20 @@
-# Use an official Node.js image as the base
-FROM node:16
+# Use an official Node.js runtime as a parent image
+FROM node:18
 
-# Create app directory
+# Set the working directory
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install only production dependencies
-RUN npm install --only=production
+# Install dependencies
+RUN npm install
 
 # Copy the rest of the application files
 COPY . .
 
-# Expose the port (Cloud Run uses port 8080 by default)
+# Expose the port that the app runs on
 EXPOSE 8080
 
-# Set environment variables for production
-ENV NODE_ENV=production
-
-# Start the application
+# Command to run the app
 CMD ["npm", "start"]
