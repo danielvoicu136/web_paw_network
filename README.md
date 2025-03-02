@@ -15,8 +15,8 @@ Coming soon
 
 ## Frontend (Client)
 
-- HTML, JavaScript, TypeScript
-- CSS, SASS, Tailwind
+- HTML, JavaScript
+- CSS, SASS
 - React, Redux
 
 ## Backend (Server)
@@ -27,20 +27,6 @@ Coming soon
 ---
 
 ## How to Run
-
-- **Frontend (Client)**
-
-  ```bash
-  cd client && npm start
-
-  ```
-
-- **Backend (Server)**
-
-  ```bash
-  cd server && npm start
-
-  ```
 
 - **Concurrent (Client , Server)**
 
